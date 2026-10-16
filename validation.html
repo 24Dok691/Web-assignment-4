@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Validation</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="qw">
+    <div class="head">
+      <h1>Forms</h1>
+      <nav class="ahref">
+        <a href="index.html">Contact</a>
+        <a href="bootstrap-form.html">Bootstrap-form</a>
+        <a href="validation.html" class="active">Validation</a>
+        <a href="register.html">Registration</a>
+      </nav>
+    </div>
+  </header>
+  <main>
+    <section class="profile-card">
+      <h1 class="text-center">Form Validation</h1>
+      <form class="live row g-3" action="#" method="post">
+        <div class="col-md-6">
+          <label for="v-name" class="form-label">Name</label>
+          <input type="text" class="form-control" id="v-name" name="name"
+                 required minlength="2" maxlength="50" placeholder="JDH">
+          <div class="valid-feedback">Looks good!</div>
+          <div class="invalid-feedback">Name is required.</div>
+        </div>
+        <div class="col-md-6">
+          <label for="v-email" class="form-label">Email</label>
+          <input type="email" class="form-control" id="v-email" name="email"
+                 required placeholder="name@mail.com">
+          <div class="valid-feedback">Looks good!</div>
+          <div class="invalid-feedback">Email is required.</div>
+        </div>
+        <div class="col-12">
+          <label for="v-pass" class="form-label">Password</label>
+          <input type="password" class="form-control" id="v-pass" name="password"
+                 required minlength="8">
+          <div class="valid-feedback">Looks good!</div>
+          <div class="invalid-feedback">Password must be at least 8 characters.</div>
+        </div>
+        <div class="col-12">
+          <button type="submit" class="btn btn-dark">Submit</button>
+        </div>
+      </form>
+    </section>
+  </main>
+  <footer class="acc text-center">
+    <p class="mb-0">&copy; 2026 Temirzakhov Adilzhan &bull;
+      <a href="https://github.com/24Dok691">My GitHub</a></p>
+  </footer>
+</body>
+</html>

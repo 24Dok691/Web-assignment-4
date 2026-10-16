@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bootstrap</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="qw">
+    <div class="head">
+      <h1>Forms</h1>
+      <nav class="ahref">
+        <a href="index.html">Contact</a>
+        <a href="bootstrap-form.html" class="active">Bootstrap-form</a>
+        <a href="validation.html">Validation</a>
+        <a href="register.html">Registration</a>
+      </nav>
+    </div>
+  </header>
+  <main>
+    <section class="profile-card text-center">
+      <h1>Contact us</h1>
+      <form action="#" method="post">
+        <div class="row g-3">
+          <div class="col-md-6">
+            <label for="b-name" class="form-label">Your name</label>
+            <input type="text" class="form-control" id="b-name" name="name"
+            required minlength="2" maxlength="50"
+            title="2 to 50 characters"
+            placeholder="Adilzhan Temirzakhov">
+            <div class="form-text">Enter your first and last name.</div>
+          </div>
+          <div class="col-md-6">
+            <label for="email" class="form-label">Your email</label>
+            <input type="email" class="form-control" id="email" name="email"
+            required maxlength="50"
+            placeholder="Email@gmail.com">
+          </div>
+          <div class="col-12">
+            <label for="message" class="form-label">Message</label>
+            <textarea id="message" class="form-control" name="message" rows="4"
+            required minlength="10" maxlength="500"
+            placeholder="10 to 500 characters"></textarea>
+          </div>
+          <div class="col-12">
+            <button type="submit" class="btn btn-dark btn-lg px-4">Send message</button>
+          </div>
+        </div>
+      </form>
+    </section>
+    </main>
+  <footer class="acc text-center">
+    <p class="mb-0">&copy; 2026 Temirzakhov Adilzhan &bull;
+      <a href="https://github.com/24Dok691">My GitHub</a></p>
+  </footer>
+</body>
+</html>
